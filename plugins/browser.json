@@ -1,0 +1,73 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.kantaur.prisma"
+        }
+    }
+}
