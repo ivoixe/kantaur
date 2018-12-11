@@ -211,6 +211,8 @@ h1 {
     left:50%;
     max-width: 75%;
     transform: translate(-50%,-50%);
+
+
     -webkit-transform: translate(-50%, -50%);
 }
 #main-menu ons-col i{
@@ -219,8 +221,11 @@ h1 {
     display: inline-block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%, -50%);
+    transform: translate3d(-50%,-50%,0);
+    -webkit-transform: translate3d(-50%, -50%,0);
+    -ms-transform:translate3d(-50%, -50%,0);
+    -o-transform: translate3d(-50%, -50%,0);
+    -moz-transform: translate(-50%, -50%);
     font-size:130px;
 }
 @media(max-width: 480px){
