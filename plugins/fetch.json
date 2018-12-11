@@ -1,8 +1,8 @@
 {
     "cordova-plugin-battery-status": {
         "source": {
-            "type": "registry",
-            "id": "cordova-plugin-battery-status@~1.1.1"
+            "type": "local",
+            "path": "F:\\Almacen-Ivo\\Trabajos-ivo\\kantaur\\node_modules\\cordova-plugin-battery-status"
         },
         "is_top_level": true,
         "variables": {}

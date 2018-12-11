@@ -38,24 +38,347 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
+    <link rel="stylesheet" href="css/onsen/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/onsen/onsen-css-components.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
-</head>
+    <link  href="css/onsen/onsenui.min.css" rel="stylesheet" type="text/css">
+    <title>KANTAUR</title>
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+     <script type="text/javascript" charset="utf-8" src="js/onsenui.min.js"></script>
+     <script type="text/javascript" charset="utf-8" src="js/jquery-1.12.4.min.js"></script>
+     <script type="text/javascript" src="js/index.js"></script>
+     <script type="text/javascript">
+       // app.initialize();
+        window.fn = {};
+        window.fn.open = function() {
+            var menu = document.getElementById('menu');
+            menu.open();
+        };
+        window.fn.load = function(page) {
 
-<body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
-    </div>
+            var content = document.getElementById('content');
+            var menu = document.getElementById('menu');
+            content.load(page)
+                .then(
+                    menu.close.bind(menu)
+                );
 
-</body>
 
-</html>
+        };
+     </script>
+ </head>
+
+ <body class="app">
+     <ons-splitter>
+
+         <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+
+             <ons-page id="home">
+
+                 <ons-list>
+
+                     <ons-list-item onclick="fn.load('home.html')" tappable>
+
+                         Kantaur
+
+                     </ons-list-item>
+                     <ons-list-item onclick="fn.load('entziklopedia.html')" tappable>
+
+                        Entziklopedia
+
+                     </ons-list-item>
+
+                     <ons-list-item onclick="fn.load('horarios.html')" tappable>
+
+                         Temas de interés
+
+                     </ons-list-item>
+
+                     <ons-list-item onclick="fn.load('configuracion.html')" tappable>
+
+                         Configuración
+
+                     </ons-list-item>
+
+                 </ons-list>
+
+             </ons-page>
+
+         </ons-splitter-side>
+
+         <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+
+     </ons-splitter>
+
+
+
+     <template id="home.html">
+
+         <ons-page>
+
+             <ons-toolbar>
+
+                 <div class="left">
+
+                     <ons-toolbar-button onclick="fn.open()">
+
+                         <ons-icon icon="md-menu"></ons-icon>
+
+                     </ons-toolbar-button>
+
+                 </div>
+
+                 <div class="center">
+
+
+
+                 </div>
+
+             </ons-toolbar>
+
+            <!-- <ons-row align="center">
+                 <ons-col class="loading" align="center">
+                     <svg class="progress-circular progress-circular--indeterminate">
+                         <circle class="progress-circular__background"/>
+                         <circle class="progress-circular__primary progress-circular--indeterminate__primary"/>
+                         <circle class="progress-circular__secondary progress-circular--indeterminate__secondary"/>
+                     </svg>
+                 </ons-col>
+             </ons-row>-->
+             <div id="main-menu" class="page__content ons-page-inner">
+
+                 <div class="titulo">
+                    <img class="img-responsive " src="img/logo.png">
+                 </div>
+                 <ons-row >
+                     <ons-col onclick="fn.load('entziklopedia.html')"  align="center">
+                         <img class="img-responsive img-circle" src="img/redondo.png">
+                         <i class="fas fa-book-open"></i>
+                         Entziklopedia
+                     </ons-col>
+                     <ons-col align="center">
+                         <img class="img-responsive img-circle" src="img/redondo.png">
+                         <i class="far fa-comment-alt"></i>
+                         Aholkuak
+                     </ons-col>
+                 </ons-row>
+                 <ons-row >
+                     <ons-col  align="center">
+                         <img class="img-responsive img-circle" src="img/redondo.png">
+                         <i class="fas fa-trash-alt"></i>
+                         Hondakinak
+                     </ons-col>
+                     <ons-col align="center">
+                         <img class="img-responsive img-circle" src="img/redondo.png">
+                         <i class="fab fa-yelp"></i>
+                         KanTrivia
+                     </ons-col>
+                 </ons-row>
+             </div>
+
+
+
+
+         </ons-page>
+
+     </template>
+
+
+
+     <template id="horarios.html">
+
+         <ons-page>
+
+             <ons-toolbar>
+
+                 <div class="left">
+
+                     <ons-toolbar-button onclick="fn.open()">
+
+                         <ons-icon icon="md-menu"></ons-icon>
+
+                     </ons-toolbar-button>
+
+                 </div>
+
+                 <div class="center">Contenido de interés</div>
+
+             </ons-toolbar>
+
+
+
+             <ons-tabbar swipeable position="bottom">
+
+
+
+                 <ons-tab page="horas.html" label="Tab 1" icon="ion-home, material:md-home" badge="7" active>
+
+                 </ons-tab>
+
+                 <ons-tab page="tab2.html" label="Tab 2" icon="md-settings" active-icon="md-face">
+
+                 </ons-tab>
+
+             </ons-tabbar>
+
+
+         </ons-page>
+
+     </template>
+
+     <template id="entziklopedia.html">
+
+         <ons-page>
+
+
+             <ons-toolbar>
+
+                 <div class="left">
+
+                     <ons-toolbar-button onclick="fn.open()">
+
+                         <ons-icon icon="md-menu"></ons-icon>
+
+                     </ons-toolbar-button>
+
+                 </div>
+
+             </ons-toolbar>
+             <div id="main-enciclopedia" class="page__content ons-page-inner">
+                 <div class="titulo">
+                     <i class="fas fa-book-open"></i> ENTZIKLOPEDIA
+
+
+                 </div>
+                 <div class="content-listado">
+                     <div class="content-content">
+                         <div class="content-select">
+                             <ons-select id="choose-sel" onchange="filtros(event)">
+                                 <i class="fas fa-caret-down"></i>
+                                 <select class=" gfg ">
+                                     <option value="basic">Espezie guztiak</option>
+                                     <option value="material">espècie 1</option>
+                                     <option value="underbar">Underbar</option>
+                                 </select>
+                             </ons-select>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+         </ons-page>
+
+     </template>
+
+     <template id="configuracion.html">
+
+         <ons-page>
+
+             <ons-toolbar>
+
+                 <div class="left">
+
+                     <ons-toolbar-button onclick="fn.open()">
+
+                         <ons-icon icon="md-menu"></ons-icon>
+
+                     </ons-toolbar-button>
+
+                 </div>
+
+                 <div class="center">
+
+                     Configuración
+
+                 </div>
+
+             </ons-toolbar>
+
+
+
+             <div style="text-align: center; margin-top: 30px;">
+
+                 <p>
+
+                     <ons-input id="username" modifier="underbar" placeholder="Usuario" float></ons-input>
+
+                 </p>
+
+                 <p>
+
+                     <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+
+                 </p>
+
+                 <p style="margin-top: 30px;">
+
+                     <ons-button id="save"    >guardar datos</ons-button>
+
+                 </p>
+
+                 <ons-button  >Ver datos</ons-button >
+
+                 <ons-button   >Borrar datos guardados</ons-button >
+
+                 <p class="token_prov"></p>
+
+             </div>
+
+
+
+
+
+
+
+
+
+
+
+         </ons-page>
+
+     </template>
+
+     <template id="horas.html">
+
+         <ons-page id="horas" >
+             <ons-button   id="load">Recargar horarios</ons-button >
+
+
+             <div data-role="content">
+
+                 <h2>Horarios de entrada</h2>
+
+
+                 <ons-row>
+                     <ons-col width="50%">
+                         <ons-list id="lista_horarios"></ons-list>
+                     </ons-col>
+                     <ons-col>Text</ons-col>
+                 </ons-row>
+
+
+
+             </div>
+         </ons-page>
+
+     </template>
+
+
+
+     <template id="tab2.html">
+
+         <ons-page id="Tab2">
+
+             <p style="text-align: center;">
+
+                 This is the second page.
+
+             </p>
+
+         </ons-page>
+
+     </template>
+
+ </body>
+
+ </html>

@@ -34,6 +34,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -45,5 +47,20 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        function editSelects(event) {
+            document.getElementById('choose-sel').removeAttribute('modifier');
+            if (event.target.value == 'material' || event.target.value == 'underbar') {
+                document.getElementById('choose-sel').setAttribute('modifier', event.target.value);
+            }
+        }
+        function addOption(event) {
+            const option = document.createElement('option');
+            var text = document.getElementById('optionLabel').value;
+            option.innerText = text;
+            text = '';
+            document.getElementById('dynamic-sel').appendChild(option);
+        }
+
+
     }
 };
