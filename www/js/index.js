@@ -47,6 +47,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
         function editSelects(event) {
             document.getElementById('choose-sel').removeAttribute('modifier');
             if (event.target.value == 'material' || event.target.value == 'underbar') {
@@ -60,6 +61,7 @@ var app = {
             text = '';
             document.getElementById('dynamic-sel').appendChild(option);
         }
+
 
 
     }

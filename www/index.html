@@ -40,10 +40,10 @@
 
     <link rel="stylesheet" href="css/onsen/material-design-iconic-font/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/onsen/onsen-css-components.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link  href="css/onsen/onsenui.min.css" rel="stylesheet" type="text/css">
-    <title>KANTAUR</title>
-    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+      <link rel="stylesheet" type="text/css" href="css/index.css" />
+      <link  href="css/onsen/onsenui.min.css" rel="stylesheet" type="text/css">
+      <title>KANTAUR</title>
+      <!-- <script type="text/javascript" src="cordova.js"></script> -->
      <script type="text/javascript" charset="utf-8" src="js/onsenui.min.js"></script>
      <script type="text/javascript" charset="utf-8" src="js/jquery-1.12.4.min.js"></script>
      <script type="text/javascript" src="js/index.js"></script>
@@ -65,6 +65,7 @@
 
 
         };
+
      </script>
  </head>
 
@@ -88,9 +89,8 @@
 
                      </ons-list-item>
 
-                     <ons-list-item onclick="fn.load('horarios.html')" tappable>
-
-                         Temas de interés
+                     <ons-list-item onclick="fn.load('hondakinak.html')" tappable>
+                         Hondakinak
 
                      </ons-list-item>
 
@@ -185,7 +185,7 @@
 
 
 
-     <template id="horarios.html">
+     <template id="detalle.html">
 
          <ons-page>
 
@@ -201,26 +201,37 @@
 
                  </div>
 
-                 <div class="center">Contenido de interés</div>
-
              </ons-toolbar>
+             <div id="main-enciclopedia-detalle" class="page__content ons-page-inner">
+                 <div class="titulo">
+                     <i class="fas fa-book-open"></i> ENTZIKLOPEDIA
+                 </div>
+                 <div class="content-listado">
+                     <div class="content-content text-center">
+                          <h2><i class="fas fa-chevron-left left "></i>Pulpo<i class="fas fa-chevron-right right"></i></h2>
+                          <h3>nombre científico</h3>
+                            <div class="imagen">
+                                <img class="img-responsive central" src="img/borrar.png">
+                            </div>
+                            <div class="textos">
+                                <p>Ur gaziko arrai erdikoipetsua. Arroka hondoetan aurkitzen dira, 120 m araberako sakontasunean. Normalean talde txikiak osatzen dituzte, baino barkarka ikusten ohi dira ere. </p>
+                                <ons-row align="center">
+                                    <ons-col>
+                                        <div class="left">
+                                            This its right.
+                                        </div>
+                                    </ons-col>
+                                    <ons-col>
+                                        <div class="right">
+                                            Lorem aliqua.
+                                        </div>
+                                    </ons-col>
+                                </ons-row>
+                            </div>
+                     </div>
 
-
-
-             <ons-tabbar swipeable position="bottom">
-
-
-
-                 <ons-tab page="horas.html" label="Tab 1" icon="ion-home, material:md-home" badge="7" active>
-
-                 </ons-tab>
-
-                 <ons-tab page="tab2.html" label="Tab 2" icon="md-settings" active-icon="md-face">
-
-                 </ons-tab>
-
-             </ons-tabbar>
-
+                 </div>
+             </div>
 
          </ons-page>
 
@@ -247,13 +258,11 @@
              <div id="main-enciclopedia" class="page__content ons-page-inner">
                  <div class="titulo">
                      <i class="fas fa-book-open"></i> ENTZIKLOPEDIA
-
-
                  </div>
                  <div class="content-listado">
                      <div class="content-content">
                          <div class="content-select">
-                             <ons-select id="choose-sel" onchange="filtros(event)">
+                             <ons-select id="choose-sel" >
                                  <i class="fas fa-caret-down"></i>
                                  <select class=" gfg ">
                                      <option value="basic">Espezie guztiak</option>
@@ -262,7 +271,28 @@
                                  </select>
                              </ons-select>
                          </div>
+                         <ons-row >
+                             <ons-col onclick="fn.load('detalle.html')" id="urlcute" align="center">
+                                 <div class="imagen">
+                                     <img class="img-responsive " src="img/listado-fondo.png">
+                                     <img class="img-responsive central" src="img/borrar.png">
+                                 </div>
+
+                                 <h2>Olagarroa</h2>
+                                 <h3>Octupus vulgaris</h3>
+
+                             </ons-col>
+                             <ons-col onclick="fn.load('detalle.html')" id="urlcute" align="center">
+                                 <div class="imagen">
+                                     <img class="img-responsive " src="img/listado-fondo.png">
+                                 <img class="img-responsive central" src="img/borrar.png">
+                                 </div>
+                                 <h2>Olagarroa</h2>
+                                 <h3>Octupus vulgaris</h3>
+                             </ons-col>
+                         </ons-row>
                      </div>
+
                  </div>
              </div>
 
@@ -270,7 +300,7 @@
 
      </template>
 
-     <template id="configuracion.html">
+     <template id="hondakinak.html">
 
          <ons-page>
 
@@ -286,42 +316,23 @@
 
                  </div>
 
-                 <div class="center">
 
-                     Configuración
-
-                 </div>
 
              </ons-toolbar>
 
 
 
-             <div style="text-align: center; margin-top: 30px;">
+             <div id="main-hondakinak" class="page__content ons-page-inner">
+                 <div class="titulo">
+                     <i class="fas fa-trash-alt"></i> HONDAKINAK
+                 </div>
+                 <h3>Itsaso ekos</h3>
+                 <div class="imagen">
 
-                 <p>
+                 </div>
+                 <div class="textos">
 
-                     <ons-input id="username" modifier="underbar" placeholder="Usuario" float></ons-input>
-
-                 </p>
-
-                 <p>
-
-                     <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
-
-                 </p>
-
-                 <p style="margin-top: 30px;">
-
-                     <ons-button id="save"    >guardar datos</ons-button>
-
-                 </p>
-
-                 <ons-button  >Ver datos</ons-button >
-
-                 <ons-button   >Borrar datos guardados</ons-button >
-
-                 <p class="token_prov"></p>
-
+                 </div>
              </div>
 
 
@@ -338,30 +349,7 @@
 
      </template>
 
-     <template id="horas.html">
 
-         <ons-page id="horas" >
-             <ons-button   id="load">Recargar horarios</ons-button >
-
-
-             <div data-role="content">
-
-                 <h2>Horarios de entrada</h2>
-
-
-                 <ons-row>
-                     <ons-col width="50%">
-                         <ons-list id="lista_horarios"></ons-list>
-                     </ons-col>
-                     <ons-col>Text</ons-col>
-                 </ons-row>
-
-
-
-             </div>
-         </ons-page>
-
-     </template>
 
 
 

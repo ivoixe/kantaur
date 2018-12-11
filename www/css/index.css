@@ -43,7 +43,12 @@ body {
     padding:0px;
     width:100%;
 }
-
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
 /* Portrait layout (default) */
 .page .ons-page-inner {
     background-color:#fff !important;
@@ -162,7 +167,48 @@ h1 {
 #main-menu ons-col img{
 
 }
+.content-listado ons-col .imagen {
+    position:relative;
+    padding: 0 4px;
+}
+.content-listado ons-col{
+    text-align: center !important;
+    margin-bottom:30px;
+}
+.content-listado h2{
+    color:#1a191d;
+    font-family: 'Rajdhani';
+    font-weight:bold ;
+    margin:0;
+    font-size:25px;
 
+}
+.content-listado  h3{
+    color:#135ca5;
+    margin:0;
+    font-size:18px;
+    font-family: 'Rajdhani';
+    font-style: italic;
+    font-weight:300;
+}
+@media(max-width: 479px){
+    .content-listado ons-col h2{
+        font-size:18px;
+    }
+    .content-listado ons-col h3{
+        font-size:14px;
+    }
+}
+.content-listado ons-col img.central {
+    position: absolute;
+    display: table;
+    top:50%;
+    left:50%;
+    max-width: 75%;
+    transform: translate(-50%,-50%);
+
+
+}
 #main-menu ons-col i{
    position: absolute;
     color:#174779;
@@ -215,4 +261,34 @@ ons-select i{
     background:#9ccdff;
     border:5px solid #88c3ff;
     padding:1px;
+}
+/**********ENCICLOPEDIA DETALLE*******************************************/
+#main-enciclopedia-detalle .imagen {
+    padding-top:15px;
+    padding-bottom:15px;
+    margin: 0 5px;
+    margin-top: 15px;
+    margin-bottom: 22px;
+    background-image: radial-gradient(#b1d7ff, #80bfff);
+}
+#main-enciclopedia-detalle .content-content{
+    padding-top:18px;
+}
+#main-enciclopedia-detalle .imagen img{
+    max-width: 80% ;
+}
+.text-center{
+    text-align: center;
+}
+.textos{
+    padding: 0 10px;
+    text-align: center;
+}
+.fa-chevron-left.left{
+   float:left;
+    margin-left: 15px;
+}
+.fa-chevron-right.right{
+    float:right;
+    margin-right: 15px;
 }
