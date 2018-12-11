@@ -167,9 +167,13 @@ h1 {
 #main-menu ons-col img{
 
 }
+.content-listado ons-col {
+    padding: 0 4px;
+
+}
 .content-listado ons-col .imagen {
     position:relative;
-    padding: 0 4px;
+    width: 100%;
 }
 .content-listado ons-col{
     text-align: center !important;
@@ -233,6 +237,11 @@ h1 {
     }
 }
 /**********ENCICLOPEDIA**********************/
+.content-imagen{
+    position: relative;
+    float:left;
+    width: 100%;
+}
 #choose-sel{
     background: #d8eafc !important;
     border-radius: 4px;
