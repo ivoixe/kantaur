@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff3fb590-d263-4fbd-b5cf-1c3133d5ae78" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/carga_datos.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/package.json" afterPath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/package.json" />
-      <change beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
-      <change beforePath="$PROJECT_DIR$/www/css/index.css" afterPath="$PROJECT_DIR$/www/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change beforePath="$PROJECT_DIR$/www/js/index.js" afterPath="$PROJECT_DIR$/www/js/index.js" />
-      <change beforePath="$PROJECT_DIR$/www/res/icon/android/drawable-hdpi-icon.png" afterPath="$PROJECT_DIR$/www/res/icon/android/drawable-hdpi-icon.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/icon/android/drawable-ldpi-icon.png" afterPath="$PROJECT_DIR$/www/res/icon/android/drawable-ldpi-icon.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/icon/android/drawable-mdpi-icon.png" afterPath="$PROJECT_DIR$/www/res/icon/android/drawable-mdpi-icon.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/icon/android/drawable-xhdpi-icon.png" afterPath="$PROJECT_DIR$/www/res/icon/android/drawable-xhdpi-icon.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/icon/android/drawable-xxhdpi-icon.png" afterPath="$PROJECT_DIR$/www/res/icon/android/drawable-xxhdpi-icon.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/icon/android/drawable-xxxhdpi-icon.png" afterPath="$PROJECT_DIR$/www/res/icon/android/drawable-xxxhdpi-icon.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-land-hdpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-land-hdpi-screen.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-land-ldpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-land-ldpi-screen.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-land-mdpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-land-mdpi-screen.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-land-xhdpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-land-xhdpi-screen.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-land-xxhdpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-land-xxhdpi-screen.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-land-xxxhdpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-land-xxxhdpi-screen.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-port-hdpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-port-hdpi-screen.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-port-ldpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-port-ldpi-screen.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-port-mdpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-port-mdpi-screen.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-port-xhdpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-port-xhdpi-screen.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-port-xxhdpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-port-xxhdpi-screen.png" />
-      <change beforePath="$PROJECT_DIR$/www/res/screen/android/drawable-port-xxxhdpi-screen.png" afterPath="$PROJECT_DIR$/www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -104,8 +79,8 @@
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-359">
-              <caret line="30" column="73" lean-forward="true" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+            <state relative-caret-position="576">
+              <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -234,12 +209,12 @@
       <workItem from="1544194855615" duration="1569000" />
       <workItem from="1544426313673" duration="42808000" />
       <workItem from="1544600225850" duration="16958000" />
-      <workItem from="1544685987401" duration="498000" />
+      <workItem from="1544685987401" duration="1613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61833000" />
+    <option name="totallyTimeSpent" value="62948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1296" height="1010" extended-state="6" />
@@ -495,8 +470,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359">
-          <caret line="30" column="73" lean-forward="true" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+        <state relative-caret-position="576">
+          <caret line="85" column="38" lean-forward="true" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
           <folding />
         </state>
       </provider>
