@@ -66,7 +66,7 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="30000" />
+    <preference name="SplashScreenDelay" value="3000" /> 
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name='phonegap-version' value='cli-7.0.1' />
     <preference name='pgb-builder-version' value='1' />
