@@ -39,11 +39,11 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" href="css/onsen/material-design-iconic-font/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="css/onsen/onsen-css-components.min.css">
-      <link rel="stylesheet" type="text/css" href="css/index.css" />
-      <link  href="css/onsen/onsenui.min.css" rel="stylesheet" type="text/css">
-      <title>KANTAUR</title>
-      <!-- <script type="text/javascript" src="cordova.js"></script> -->
+       <link rel="stylesheet" href="css/onsen/onsen-css-components.min.css">
+       <link rel="stylesheet" type="text/css" href="css/index.css" />
+       <link  href="css/onsen/onsenui.min.css" rel="stylesheet" type="text/css">
+       <title>KANTAUR</title>
+       <!-- <script type="text/javascript" src="cordova.js"></script> -->
      <script type="text/javascript" charset="utf-8" src="js/onsenui.min.js"></script>
      <script type="text/javascript" charset="utf-8" src="js/jquery-1.12.4.min.js"></script>
      <script type="text/javascript" src="js/index.js"></script>
@@ -158,7 +158,7 @@
                          </div>
                          Entziklopedia
                      </ons-col>
-                     <ons-col  align="center">
+                     <ons-col onclick="fn.load('aholkuak.html')" align="center">
                          <div class="content-imagen">
                              <img class="img-responsive img-circle" src="img/redondo.png">
                              <i class="far fa-comment-alt"></i>
@@ -167,14 +167,14 @@
                      </ons-col>
                  </ons-row>
                  <ons-row >
-                     <ons-col  align="center">
+                     <ons-col onclick="fn.load('hondakinak.html')" align="center">
                          <div class="content-imagen">
                              <img class="img-responsive img-circle" src="img/redondo.png">
                              <i class="fas fa-trash-alt"></i>
                          </div>
                          Hondakinak
                      </ons-col>
-                     <ons-col align="center">
+                     <ons-col onclick="fn.load('kantrivia.html')" align="center">
                          <div class="content-imagen">
                              <img class="img-responsive img-circle" src="img/redondo.png">
                              <i class="fab fa-yelp"></i>
@@ -212,11 +212,11 @@
              </ons-toolbar>
              <div id="main-enciclopedia-detalle" class="page__content ons-page-inner">
                  <div class="titulo">
-                     <i class="fas fa-book-open"></i> ENTZIKLOPEDIA
+                     <h1><i class="fas fa-book-open"></i> ENTZIKLOPEDIA</h1>
                  </div>
                  <div class="content-listado">
                      <div class="content-content text-center">
-                          <h2><i class="fas fa-chevron-left left "></i>Pulpo<i class="fas fa-chevron-right right"></i></h2>
+                          <h2><i class="fas fa-chevron-left left back "></i>Pulpo<i class="fas fa-chevron-right right next"></i></h2>
                           <h3>nombre científico</h3>
                             <div class="imagen">
                                 <img class="img-responsive central" src="img/borrar.png">
@@ -265,7 +265,7 @@
              </ons-toolbar>
              <div id="main-enciclopedia" class="page__content ons-page-inner">
                  <div class="titulo">
-                     <i class="fas fa-book-open"></i> ENTZIKLOPEDIA
+                     <h1><i class="fas fa-book-open"></i> ENTZIKLOPEDIA </h1>
                  </div>
                  <div class="content-listado">
                      <div class="content-content">
@@ -307,6 +307,63 @@
          </ons-page>
 
      </template>
+     <template id="aholkuak.html">
+
+         <ons-page>
+
+
+             <ons-toolbar>
+
+                 <div class="left">
+
+                     <ons-toolbar-button onclick="fn.open()">
+
+                         <ons-icon icon="md-menu"></ons-icon>
+
+                     </ons-toolbar-button>
+
+                 </div>
+
+             </ons-toolbar>
+             <div id="main-aholkuak" class="page__content ons-page-inner">
+                 <div class="titulo">
+                     <h1><i class="far fa-comment-alt"></i> AHOLKUAK </h1>
+                 </div>
+                 <div class="lista">
+                     <div class="content-content">
+
+                         <ons-row >
+                             <ons-col class="left" onclick="fn.load('detalle.html')" id="urlcute" align="center">
+                                 <div class="imagen">
+                                     <img class="img-responsive " src="img/borrar.png">
+                                 </div>
+
+                             </ons-col>
+                              <ons-col class="texto">
+                                 <p>texto</p>
+                              </ons-col>
+
+                         </ons-row>
+                         <ons-row>
+                             <ons-col class="left" onclick="fn.load('detalle.html')" id="urlcute" align="center">
+                                 <div class="imagen">
+                                     <img class="img-responsive " src="img/borrar.png">
+                                 </div>
+
+                             </ons-col>
+                             <ons-col class="texto">
+                                 <p>texto</p>
+                             </ons-col>
+                         </ons-row>
+                     </div>
+
+                 </div>
+             </div>
+
+         </ons-page>
+
+     </template>
+
 
      <template id="hondakinak.html">
 
@@ -332,14 +389,21 @@
 
              <div id="main-hondakinak" class="page__content ons-page-inner">
                  <div class="titulo">
-                     <i class="fas fa-trash-alt"></i> HONDAKINAK
+                     <h1>  <i class="fas fa-trash-alt"></i> HONDAKINAK </h1>
                  </div>
-                 <h3>Itsaso ekos</h3>
+                 <h3 class="text-center">Itsaso ekos</h3>
                  <div class="imagen">
-
+                     <img class="img-responsive " src="img/borrar.png">
                  </div>
-                 <div class="textos">
 
+                 <div class="textos">
+                     <p>
+                         texto de pruebas
+                     </p>
+                        <ol>
+                            <li><strong>Pilak</strong>: lition ,,,</li>
+                            <li><strong>Pilak</strong>: lition ,,,</li>
+                        </ol>
                  </div>
              </div>
 
@@ -361,15 +425,146 @@
 
 
 
-     <template id="tab2.html">
+     <template id="kantrivia.html">
 
-         <ons-page id="Tab2">
+         <ons-page>
+             <ons-toolbar>
+                 <div class="left">
 
-             <p style="text-align: center;">
+                     <ons-toolbar-button onclick="fn.open()">
 
-                 This is the second page.
+                         <ons-icon icon="md-menu"></ons-icon>
 
-             </p>
+                     </ons-toolbar-button>
+                 </div>
+             </ons-toolbar>
+             <div id="main-kantrivia" class="page__content ons-page-inner">
+                 <div class="titulo">
+                    <h1><i class="fab fa-yelp"></i> KANTRIVIA <h1>
+                 </div>
+                <div class="pregunta marco">
+                    <div class="pregunta-content">
+                        <div class="content text-center">
+                                <i class="fas fa-map-marker mark"><span>a</span></i>
+                             ¿Zenbat Haitzetako barbarina ale daude Kantauri Itsasoan?
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="respuestas">
+                     <ons-row>
+                         <ons-col   align="center">
+                             <div class="respuesta marco" onclick="fn.load('resultado.html')">
+                                 <div class="respuesta-content">
+                                     <div class="content text-center">
+                                         <i class="fas fa-map-marker mark"><span>a</span></i>
+                                         ¿Zenbat Haitzetako barbarina ale daude Kantauri Itsasoan?
+                                     </div>
+                                 </div>
+                             </div>
+                         </ons-col>
+                         <ons-col >
+                             <div class="respuesta marco">
+                                 <div class="respuesta-content">
+                                     <div class="content text-center">
+                                         <i class="fas fa-map-marker mark"><span>a</span></i>
+                                         ¿Zenbat Haitzetako barbarina ale daude Kantauri Itsasoan?
+                                     </div>
+                                 </div>
+                             </div>
+                         </ons-col>
+                     </ons-row>
+                     <ons-row>
+                         <ons-col   align="center">
+                             <div class="respuesta marco">
+                                 <div class="respuesta-content">
+                                     <div class="content text-center">
+                                         <i class="fas fa-map-marker mark"><span>a</span></i>
+                                         ¿Zenbat Haitzetako barbarina ale daude Kantauri Itsasoan?
+                                     </div>
+                                 </div>
+                             </div>
+                         </ons-col>
+                         <ons-col >
+                             <div class="respuesta marco">
+                                 <div class="respuesta-content">
+                                     <div class="content text-center">
+                                         <i class="fas fa-map-marker mark"><span>a</span></i>
+                                         ¿Zenbat Haitzetako barbarina ale daude Kantauri Itsasoan?
+                                     </div>
+                                 </div>
+                             </div>
+                         </ons-col>
+                     </ons-row>
+
+
+
+                 </div>
+             </div>
+
+         </ons-page>
+
+     </template>
+     <template id="resultado.html">
+
+         <ons-page>
+             <ons-toolbar>
+                 <div class="left">
+
+                     <ons-toolbar-button onclick="fn.open()">
+
+                         <ons-icon icon="md-menu"></ons-icon>
+
+                     </ons-toolbar-button>
+                 </div>
+             </ons-toolbar>
+             <div id="main-resultado" class="page__content ons-page-inner">
+                 <div class="titulo">
+                    <h1><i class="fab fa-yelp"></i> KANTRIVIA</h1>
+                 </div>
+                 <div class="total btn text-center">
+                     <i class="fas fa-thumbs-up"></i> BIKAIN!
+                     <ons-row></ons-row>
+                     <span>Zure emaitza: <strong>10</strong></span>
+                 </div>
+                 <div class="puntos">
+                     <ons-row>
+                         <ons-col class="text-center">
+                             <div class="puntos_1 mini-bloque">
+                                 <div class="imagen mini-bloque">
+                                    <img class="img-responsive soporte img-circle" src="../img/imagen-soporte.png" />
+                                     <span class="numero">27</span>
+                                 </div>
+                             </div>
+                             <span class="label-titular" >Jolastutako partidak</span>
+                         </ons-col>
+                         <ons-col class="text-center" >
+                             <div class="puntos_2 mini-bloque">
+                                 <div class="imagen mini-bloque">
+                                     <img class="img-responsive soporte img-circle" src="../img/imagen-soporte.png" />
+                                     <span class="numero">10</span>
+                                 </div>
+                             </div>
+                             <span class="label-titular" >Puntuazio hoberena</span>
+                         </ons-col>
+                         <ons-col class="text-center" >
+                             <div class="puntos_3 mini-bloque">
+                                 <div class="imagen mini-bloque">
+                                     <img class="img-responsive soporte img-circle" src="../img/imagen-soporte.png" />
+                                     <span class="numero">88</span>
+                                 </div>
+                             </div>
+                             <span class="label-titular">Ranking generala</span >
+                         </ons-col>
+                     </ons-row>
+                 </div>
+                 <div class="btn berri text-center">
+                     <img class="img-responsive" src="../img/volver-jugar.png">
+                    <span> Jolastu partida berri bat</span>
+
+                 </div>
+
+             </div>
 
          </ons-page>
 

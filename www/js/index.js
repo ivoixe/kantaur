@@ -66,3 +66,37 @@ var app = {
 
     }
 };
+$( document ).ready(function() {
+    $( document ).on( 'click','#main-enciclopedia-detalle .next', function() {
+        var id= ('#main-enciclopedia-detalle').attr('sec_id');
+        var filtro= ('#main-enciclopedia-detalle').attr('filtro');
+        datas(id,fitlro,'next');
+    });
+    $( document ).on( 'click','#main-enciclopedia-detalle .back', function() {
+        var id= ('#main-enciclopedia-detalle').attr('sec_id');
+        var filtro= ('#main-enciclopedia-detalle').attr('filtro');
+        datas(id,fitlro,'back');
+
+    });
+    $( document ).on('change','#choose-sel select',function() {
+        datas('',$(this).val(),'');
+
+    });
+
+
+
+});
+function datas(id,fitlro,direccion){
+    $.ajax({
+        method: "POST",
+        url:'http://app-connecting.prismacm.com/save_host_nube.php',
+        data: ({id:id,filtro:filtro,direccion:direccion}),
+        dataType: "json",
+        success: function(resp){
+
+        },
+        error: function(){
+
+        }
+    });
+}
