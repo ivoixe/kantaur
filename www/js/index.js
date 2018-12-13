@@ -82,6 +82,9 @@ $( document ).ready(function() {
         datas('',$(this).val(),'');
 
     });
+    setTimeout(function() {
+        navigator.splashscreen.hide();
+    }, 2000);
 
 
 
